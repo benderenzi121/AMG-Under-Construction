@@ -20,8 +20,8 @@ class App extends Component{
 
     render(){
         return (
-        <div>
-            <div className='container-fluid'>
+        
+            <div className='container-fluid test' >
                 <div className = 'row header'>
                     <div className = 'col-md'>
                     <img className = 'header-logo' src={amazinglogo}/>
@@ -31,7 +31,7 @@ class App extends Component{
                     </div>
                 </div>
                 <div className='header-spacer row'>
-                    
+
                 </div>
                 
                 <div className = 'row content'>
@@ -43,10 +43,10 @@ class App extends Component{
                     </div>
                     <div className = 'row content-center'>
                         <div className = 'col-lg-4 box-col'>
-                            <Box title='Ebay' img={ebay}/>
+                            <Box title='Ebay' img={ebay} href='https://www.ebay.com/str/amazinggamestcg'/>
                         </div>
                         <div className = 'col-lg-4 box-col'>
-                            <Box title='TCG Player' img={tcgplayer}/>
+                            <Box title='TCG Player' img={tcgplayer} href='https://www.tcgplayer.com/search/product/all'/>
                         </div>
                         <div className = 'col-lg-4 box-col'>
                             <div className = 'box'>
@@ -57,14 +57,14 @@ class App extends Component{
                                 <p>Store Address: 3189 Richmond Road Staten Island, New York</p>
                                 <p>Contact Email: AmazingGames@gmail.com</p>
                             </div>
-                            <button className='button box-button'>Email</button>
+                            <a href='mailto:amazinggamestcg@gmail.com'><button className='button box-button'>Email</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div className='row footer'>
-                    <div className='row'>
+                    
                         <div className='col-md-3 footer-col'>
                             
                             <h3>About</h3>
@@ -83,9 +83,9 @@ class App extends Component{
                             <hr/>
                             <div className='row'>
                                 <div className='col'>
-                                    <a><img className='footer-icon' src={ebay}></img></a>
-                                    <a><img className='footer-icon' src={facebook}></img></a>
-                                    <a><img className='footer-icon'src={insta}></img></a>
+                                    <a href='https://www.ebay.com/str/amazinggamestcg'><img className='footer-icon' src={ebay}></img></a>
+                                    <a href='https://www.facebook.com/AmazingGamesTCG/'><img className='footer-icon' src={facebook}></img></a>
+                                    <a href='https://www.instagram.com/amazinggamestcg/'><img className='footer-icon'src={insta}></img></a>
                                 </div>
                             </div>
                         </div>
@@ -97,14 +97,18 @@ class App extends Component{
                             <p>Email: AmazingGames@gmail.com</p>
                             
                         </div>
+                    
                     </div>
-                    <div className='row footer-tm'>
+                    <div className='row footer-tm '>
+                        
                         <p>© 2021 Amazing Games TCG. All rights Reserved .</p>
+                        
                     </div>
-                </div>
+                    </div>
+                
             
-            </div>
-        </div>
+            
+        
         );
     }
 }

@@ -1,11 +1,13 @@
 body {
     font-family: Oswald, "Space Mono", monospace;
+    
 }
+
 
 .header{
     background-color: #464646;
     padding-top:.5rem;
-    
+    margin-right:-2rem;
     
 }
 .header-logo{
@@ -22,7 +24,7 @@ body {
     font-size: 2.5rem;
     padding-top:3rem;
     padding-bottom: 1rem;
-    
+    margin-left:1.5rem;
     color: #EECE00;
     padding-bottom:2.2rem;
     margin-top:-1.7rem;
@@ -38,22 +40,28 @@ body {
 }
 .content{
 
-    padding:1rem;
+    margin-right:-2rem;
     background: #949292;
     text-align: center;
 }
 .banner{
-    margin-left:-50px;
-    margin-right:-50px;
+  
     background-color: #EECE00;
     padding-top:.5rem;
     padding-bottom:1px;
+    margin-top:8rem;
+}
+@media only screen and (min-width: 992px) {
+    .banner{
+       margin-top:1rem;
+    }
 }
 .banner-text{
     color:#484848;
     font-weight: 450;
     font-size:3rem;
     text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+    
     
 }
 .banner-subtext{
@@ -126,18 +134,32 @@ body {
     font-weight:450;
     color:#484848;
     padding:.5rem 1rem .5rem 1rem;
+    
 
+}
+.box-link:hover{
+    text-decoration: underline #484848;
 }
 
 
 .content-center{
     margin:auto;
-    margin-top:-3.5rem;
+    margin-top:2rem;
+    padding-bottom: 11rem;
+ 
+
+}
+@media only screen and (min-width: 992px) {
+    .content-center{
+        margin-top:0;
+        padding-bottom:0rem;
+    }
 }
 .footer{
     background-color: #464646;
     color:  #EECE00;
     text-align:center;
+    margin-right:-2rem;
     
 }
 .footer hr{
@@ -145,13 +167,13 @@ body {
 }
 .footer-icon{
     height:2vh;
-    width:2vh;
+    width:4vw;
     margin:.5rem;
 }
 @media only screen and (min-width: 992px) {
     .footer-icon{
-        height:5vh;
-        width:5vh;
+        height:3vh;
+        width:3vh;
         margin:.5rem;
     }
 }
@@ -165,17 +187,25 @@ body {
 }
 
 .footer h3{
-    font-size:1.6rem;
+    font-size:1rem;
     padding-top:.5rem;
     
 }
 
 .footer p{
-    font-size:1rem;
+    font-size:.8rem;
     
     
 }
 .footer-tm{
     margin:auto;
+    display:block;
+    padding-bottom:1rem;
+    background-color: #464646;
+    color:#EECE00;
+    text-align:center;
+    margin-right:-2rem;
+    margin-left:-2rem;
+    padding-bottom:2rem;
     
 }
